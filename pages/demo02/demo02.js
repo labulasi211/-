@@ -8,6 +8,8 @@ Page({
 handleInput(e){
   console.log(e);
   console.log(e.detail.value);
-  data.num=e.detail.value;
+  this.setData({
+    num:e.detail.value,
+  })
 },
 });
