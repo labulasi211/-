@@ -1,0 +1,67 @@
+<!-- pages/demo01/demo01.wxml -->
+<text>1</text>
+<text>2</text>
+<view>3</view>
+<!-- 字符串 -->
+<view>{{ msg }}</view>
+<!-- 数字类型 -->
+<view>{{ num }}</view>
+<!-- booler类型 -->
+<view>是否是个伪娘:{{isGirl}}</view>
+<!-- 字典类型 -->
+<view>{{person.age}}</view>
+<view>{{person.height}}</view>
+<view>{{person.weight}}</view>
+<view>{{person.name}}</view>
+<!-- 在标签中的属性使用 -->
+<view data-num="{{num}}">自定义属性</view>
+<!-- 需要注意的问题 -->
+<view>
+    <checkbox checked="{{isCheck}}" />
+</view>
+<!-- 运算 -->
+<view>{{1+1}}</view>
+<view>{{'1'+'1'}}</view>
+<view>{{ 11%2==0?'偶数':'奇数' }}</view>
+<!-- 数组与对象循环 -->
+<!-- 只有一层循环时， wx:for-index="index" wx:for-item="item" 是可以省略的-->
+<view 
+    wx:for="{{list}}"
+    wx:for-index="index"
+    wx:for-item="item"
+    wx:key="id"
+>
+    索引:{{index}}--{{item.name}}
+</view>
+<view >
+    <view >对象循环</view>
+    <view 
+    wx:for="{{person}}" 
+    wx:for-index="key"
+    wx:for-item="value"
+    wx:key="age"
+    >
+    属性:{{key}}
+    --
+    值:{{value}}
+    </view>
+</view>
+
+<!-- 条件渲染 -->
+<!-- wx:if wx:elif wx:else -->
+<!-- hidden -->
+<view >
+    <view >if条件渲染</view>
+    <view wx:if="{{false}}">隐藏</view>
+    <view wx:elif="{{false}}">隐藏</view>
+    <view wx:else>显示</view>
+</view>
+
+<view hidden>隐藏</view>
+<view hidden="{{false}}">显示</view>
+
+<!-- 注意在最后wx:if 和 hidden 之间的样式区别
+    其中主要的区别在于两者中一个是类似改变结构而另一种是隐藏 
+-->
+<view wx:if="{{false}}">隐藏</view>
+<view hidden >隐藏</view>
