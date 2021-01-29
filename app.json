@@ -1,8 +1,9 @@
 {
   "pages":[
+    "pages/index/index",
+    "pages/demo04/demo04",
     "pages/demo02/demo02",
     "pages/demo01/demo01",
-    "pages/index/index",
     "pages/img/img",
     "pages/search/search",
     "pages/mine/mine",
@@ -30,19 +31,19 @@
         "selectedIconPath": "icon/home.png"
       },
       {
-        "pagePath": "pages/img/img",
+        "pagePath": "pages/demo04/demo04",
         "text": "图片",
         "iconPath": "icon/_img.png",
         "selectedIconPath": "icon/img.png"
       },
       {
-        "pagePath": "pages/search/search",
+        "pagePath": "pages/demo02/demo02",
         "text": "搜索",
         "iconPath": "icon/_search.png",
         "selectedIconPath": "icon/search.png"
       },
       {
-        "pagePath": "pages/mine/mine",
+        "pagePath": "pages/demo01/demo01",
         "text": "我的",
         "iconPath": "icon/_my.png",
         "selectedIconPath": "icon/my.png"

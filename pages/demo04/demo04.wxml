@@ -1,0 +1,9 @@
+<view >
+    rpx
+</view>
+
+<text selectable="{{true}}" decode="{{true}}">
+    try&nbsp;lalala&lt;
+</text>
+
+<button >+</button>

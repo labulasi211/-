@@ -1,0 +1,29 @@
+/* pages/demo04/demo04.wxss */
+/* 关于rpx的使用方法 */
+/* import的使用，只能使用相对路径 */
+/* 使用less文件，可以使用变量 */
+
+@import '../../style/common.wxss';
+@import '../../style/reset.less';
+
+@color:yellow;
+
+view{
+    width: 200rpx;
+    height: 200rpx;
+    font-size: 40rpx;
+    background-color: @color;
+}
+
+text{
+    .view{
+        vie1{
+            color: @color;
+        }
+    }
+}
+
+button{
+    color: @themeColor;
+}
+
