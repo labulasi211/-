@@ -1,3 +1,4 @@
+<navigator open-type="navigateBack" url="pages/demo06/demo06"> 返回上一个页面 </navigator>
 
 <view >
     <swiper autoplay="{{true}}" interval="2000" circular="{{true}}" indicator-dots="{{true}}" indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="#0f0" >
