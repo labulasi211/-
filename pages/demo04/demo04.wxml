@@ -1,3 +1,12 @@
+
+<view >
+    <swiper autoplay="{{true}}" interval="2000" circular="{{true}}" indicator-dots="{{true}}" indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="#0f0" >
+        <swiper-item > <image mode="widthFix" src="https://img.alicdn.com/imgextra/i4/2206686532409/O1CN01RY5PFX1TfMmTFzRzs_!!2206686532409-0-lubanimage.jpg" /> </swiper-item>
+        <swiper-item > <image mode="widthFix" src="https://img.alicdn.com/imgextra/i1/2206686532409/O1CN01vwRft51TfMmTyQvYt_!!2206686532409-0-lubanimage.jpg" /> </swiper-item>
+        <swiper-item > <image mode="widthFix" src="https://img.alicdn.com/imgextra/i4/2206686532409/O1CN0112PVRg1TfMmUF8LU2_!!2206686532409-0-lubanimage.jpg" /> </swiper-item>
+    </swiper>
+</view>
+
 <view >
     rpx
 </view>

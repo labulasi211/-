@@ -18,3 +18,10 @@ text .view vie1 {
 button {
   color: green;
 }
+swiper {
+  width: 100vw;
+  height: calc(100vw * 325 / 1152);
+}
+image {
+  width: 100vw;
+}
