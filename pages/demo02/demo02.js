@@ -3,6 +3,7 @@
 Page({
   data: {
     num: 0,
+    
   },
   //input处理
   handleInput(e) {

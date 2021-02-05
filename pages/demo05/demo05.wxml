@@ -1,3 +1,7 @@
-<view >
+<!-- <view >
     <image mode="widthFix" src="https://p.pstatp.com/origin/137fd0002a810b2d56b28"/>
-</view>
+</view> -->
+
+<rich-text nodes="{{html}}"></rich-text>
+
+<rich-text nodes="{{html_2}}"></rich-text>
