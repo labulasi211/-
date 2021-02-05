@@ -20,4 +20,10 @@ Page({
       num: (this.data.num - 0) + operation, //num是一个字符串，在js中可以通过(num-0)来强行将其转换为数值在与operation进行相应的运算
     })
   },
+  GetPhoneNumber(e){
+    console.log(e);
+  },
+  GetUserInfo(e){
+    console.log(e);
+  }
 });

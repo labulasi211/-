@@ -2,5 +2,18 @@
 <input type="data" bindinput="handleInput" />
 <view >{{num}}</view>
 <!-- 添加开关 -->
-<button bindtap="handletap" data-operation="{{1}}">+</button>
-<button bindtap="handletap" data-operation="{{-1}}">-</button>
+<button type="primary" bindtap="handletap" data-operation="{{1}}">+</button>
+<button size="mini" bindtap="handletap" data-operation="{{-1}}">-</button>
+<button type="warn" bindtap="handletap" data-operation="{{0}}">warn</button>
+<button type="warn" plain="{{true}}" bindtap="handletap" data-operation="{{0}}"> plain warn </button>
+<button loading="{{true}}" bindtap="handletap" data-operation="{{-1}}">loading -</button>
+
+
+<!-- 开放功能 -->
+<button open-type="contact"> contact </button>
+<button open-type="share"> share </button>
+<button open-type="getPhoneNumber" bindgetphonenumber="GetPhoneNumber"> getPhoneNumber </button>
+<button open-type="getUserInfo" bindgetuserinfo="GetUserInfo"> getUserInfo </button>
+<button open-type="launchApp"> launchApp </button>
+<button open-type="openSetting"> openSetting </button>
+<button open-type="feedback"> feedback </button>
