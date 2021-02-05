@@ -17,3 +17,7 @@
 </text>
 
 <button >+</button>
+
+<icon type="success" size="23" color="#0094ff" /> 
+<icon type="success" size="40" color="#0094ff" /> 
+<icon type="cancel" size="23" color="#0094ff" /> 
