@@ -4,6 +4,24 @@ Page({
   data: {
     num: 0,
     gender:"",
+    list:[
+      {
+        id:0,
+        name:"🍎",
+        value:"apple"
+      },
+      {
+        id:1,
+        name:"🍇",
+        value:"grape"
+      },
+      {
+        id:2,
+        name:"🍌",
+        value:"banana"
+      }
+    ],
+    checklist:[],
   },
   //input处理
   handleInput(e) {
@@ -31,6 +49,13 @@ Page({
     let gender=e.detail.value;
     this.setData({
       gender,
+    })
+  },
+  handleItemChange(e){
+    console.log(e);
+    const checklist=e.detail.value;
+    this.setData({
+      checklist,
     })
   },
 });
