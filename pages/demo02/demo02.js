@@ -3,7 +3,7 @@
 Page({
   data: {
     num: 0,
-    
+    gender:"",
   },
   //input处理
   handleInput(e) {
@@ -25,5 +25,12 @@ Page({
   },
   GetUserInfo(e){
     console.log(e);
-  }
+  },
+  radioChange(e){
+    console.log(e);
+    let gender=e.detail.value;
+    this.setData({
+      gender,
+    })
+  },
 });

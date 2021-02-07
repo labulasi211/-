@@ -17,3 +17,11 @@
 <button open-type="launchApp"> launchApp </button>
 <button open-type="openSetting"> openSetting </button>
 <button open-type="feedback"> feedback </button>
+
+<!-- 按钮选择 -->
+<radio-group bindchange="radioChange">
+    <radio value="male" color="#0094ff"> 男 </radio>
+    <radio value="female" color="#0094ff"> 女 </radio>
+</radio-group>
+
+<view >您选中的性别是：{{gender}}</view>
