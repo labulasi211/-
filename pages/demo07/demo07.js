@@ -27,6 +27,21 @@ Page({
       },
     ],
   },
-
+  handleItemChange(e){
+    console.log(e);
+    const tabs=this.data.tabs;
+    const data=e.detail;
+    for(let i=0,lenI=tabs.length;i<lenI;++i)
+      tabs[i].isActive=false;
+    for(let j=0,lenJ=tabs.length;j<lenJ;++j){
+      if(tabs[j].id==data){
+         tabs[j].isActive=true;
+         break;
+      }
+    }
+    this.setData({
+      tabs
+    })
+  }
 
 })

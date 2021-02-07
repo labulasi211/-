@@ -22,19 +22,21 @@ Component({
   methods: {
     handleItemTap(e){
       console.log(e);
-      const tabs=this.data.tabs;
+      // const tabs=this.data.tabs;
       const data=e.currentTarget.dataset.index;
-      for(let i=0,lenI=tabs.length;i<lenI;++i)
-        tabs[i].isActive=false;
-      for(let j=0,lenJ=tabs.length;j<lenJ;++j){
-        if(tabs[j].id==data){
-           tabs[j].isActive=true;
-           break;
-        }
-      }
-      this.setData({
-        tabs
-      })
+      this.triggerEvent("itemChange",data);
+
+      // for(let i=0,lenI=tabs.length;i<lenI;++i)
+      //   tabs[i].isActive=false;
+      // for(let j=0,lenJ=tabs.length;j<lenJ;++j){
+      //   if(tabs[j].id==data){
+      //      tabs[j].isActive=true;
+      //      break;
+      //   }
+      // }
+      // this.setData({
+      //   tabs
+      // })
     }
   }
 })

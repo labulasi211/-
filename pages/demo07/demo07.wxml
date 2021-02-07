@@ -1,1 +1,1 @@
-<Tabs aaa="123" tabs="{{tabs}}" ></Tabs>
+<Tabs aaa="123" tabs="{{tabs}}" binditemChange="handleItemChange" ></Tabs>
